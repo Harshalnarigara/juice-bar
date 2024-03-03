@@ -186,6 +186,14 @@
 
 /* background */
 
+/* get 10% */
+
+    .offer{
+        background-color: #f5e8ff;
+    }
+
+/* get 10% */
+
 
 @media (min-width:448px) and (max-width:576px) {
 
@@ -215,6 +223,5 @@
         align-items: center;
         justify-content: center;
     }
-
     /* navbar */
 }
