@@ -17,8 +17,26 @@
 }
 /* navbar */
 
+/* Fuel Your Body. Balance Your Mind. */
 
-@media (min-width:405px) and (max-width:576px) {
+.sec-2 h1{
+ font-family: sans-serif;
+ font-weight: 500;
+}
+.sec-2 a button{
+    height: 60px;
+    width: 220px;
+}
+.sec-2 a button:hover{
+    background-color: #000;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+/* Fuel Your Body. Balance Your Mind. */
+
+
+@media (min-width:448px) and (max-width:576px) {
     /* navbar */
     .navbar-toggler{
         margin-left: 10px;
@@ -29,7 +47,7 @@
     /* navbar */
 
 }
-@media (min-width:0px) and (max-width:404px) {
+@media (min-width:0px) and (max-width:448px) {
     /* navbar */
     .navbar-toggler{
         margin-left: 10px;
