@@ -172,6 +172,20 @@
 
 /* Fuel Your Body. Balance Your Mind. */
 
+/* background */
+
+    .bg{
+        height: 600px;
+        width: 100%;
+        background-image: url(/assests/img/home/1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+/* background */
+
 
 @media (min-width:448px) and (max-width:576px) {
 
