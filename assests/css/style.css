@@ -1,0 +1,44 @@
+/* navbar */
+
+.navbar-toggler{
+    margin-left: 50px;
+}
+.menu{
+    margin-right: 50px;
+}
+.nav-item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-item a{
+    transition: 0.5s;
+}
+.nav-item a:hover{
+    letter-spacing: 2px;
+}
+/* navbar */
+
+
+@media (min-width:405px) and (max-width:576px) {
+    /* navbar */
+    .navbar-toggler{
+        margin-left: 10px;
+    }
+    .menu{
+        margin-right: 10px;
+    }
+    /* navbar */
+
+}
+@media (min-width:0px) and (max-width:404px) {
+    /* navbar */
+    .navbar-toggler{
+        margin-left: 10px;
+    }
+    .menu{
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    /* navbar */
+}
