@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --headingcolor: rgb(237, 62, 62); 
+}
+
 /* loader */
 
 
@@ -9,14 +15,14 @@
     height: 100%;
     z-index: 10;
     overflow: hidden;
-    
+
     .no-js & {
-      display: none;
+        display: none;
     }
-  }
-  
-  
-  #loader {
+}
+
+
+#loader {
     display: block;
     position: relative;
     left: 50%;
@@ -29,126 +35,136 @@
     border-top-color: #16a085;
     animation: spin 1.7s linear infinite;
     z-index: 11;
-    
+
     &:before {
-      content: "";
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #e74c3c;
-      animation: spin-reverse .6s linear infinite;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #e74c3c;
+        animation: spin-reverse .6s linear infinite;
     }
-    
+
     &:after {
-      content: "";
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      right: 15px;
-      bottom: 15px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: #f9c922;
-      animation: spin 1s linear infinite;
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: #f9c922;
+        animation: spin 1s linear infinite;
     }
-  }
-  
+}
+
 
 @keyframes spin {
-  0% { 
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spin-reverse {
-  0% { 
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
-  
-  
-  #loader-wrapper .loader-section {
+
+
+#loader-wrapper .loader-section {
     position: fixed;
     top: 0;
     width: 51%;
     height: 100%;
     background: #222;
     z-index: 10;
-  }
-  
-  #loader-wrapper .loader-section.section-left {
+}
+
+#loader-wrapper .loader-section.section-left {
     left: 0;
-  }
-  
-  #loader-wrapper .loader-section.section-right {
+}
+
+#loader-wrapper .loader-section.section-right {
     right: 0;
-  }
-  
-  /* Loaded styles */
-  
-  .loaded #loader-wrapper .loader-section.section-left {
+}
+
+/* Loaded styles */
+
+.loaded #loader-wrapper .loader-section.section-left {
     transform: translateX(-100%);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  }
-  
-  .loaded #loader-wrapper .loader-section.section-right {
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
     transform: translateX(100%);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-  }
-  
-  .loaded #loader {
+}
+
+.loaded #loader {
     opacity: 0;
     transition: all 0.3s ease-out;
-  }
-  
-  .loaded #loader-wrapper {
+}
+
+.loaded #loader-wrapper {
     visibility: hidden;
     transform: translateY(-100%);
     transition: all 0.3s 1s ease-out;
-  }
+}
 
 /* loader */
 /* navbar */
 
-.navbar-toggler{
+.navbar-toggler {
     margin-left: 50px;
 }
-.menu{
+
+.menu {
     margin-right: 50px;
 }
-.nav-item{
+
+.nav-item {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.nav-item a{
+
+.nav-item a {
     transition: 0.5s;
 }
-.nav-item a:hover{
+
+.nav-item a:hover {
     letter-spacing: 2px;
 }
+
 /* navbar */
 
 /* Fuel Your Body. Balance Your Mind. */
 
-.sec-2 h1{
- font-family: sans-serif;
- font-weight: 500;
+.sec-2 h1 {
+    font-family: "Courgette", cursive;
+    font-weight: 500;
+    color: var(--headingcolor);
 }
-.sec-2 a button{
+
+.sec-2 a button {
     height: 60px;
     width: 220px;
 }
-.sec-2 a button:hover{
+
+.sec-2 a button:hover {
     background-color: #000;
     color: white;
     transition: all ease 0.5s;
@@ -158,26 +174,33 @@
 
 
 @media (min-width:448px) and (max-width:576px) {
+
     /* navbar */
-    .navbar-toggler{
+    .navbar-toggler {
         margin-left: 10px;
     }
-    .menu{
+
+    .menu {
         margin-right: 10px;
     }
+
     /* navbar */
 
 }
+
 @media (min-width:0px) and (max-width:448px) {
+
     /* navbar */
-    .navbar-toggler{
+    .navbar-toggler {
         margin-left: 10px;
     }
-    .menu{
+
+    .menu {
         margin: auto;
         width: 100%;
         align-items: center;
         justify-content: center;
     }
+
     /* navbar */
 }
