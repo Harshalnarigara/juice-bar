@@ -219,9 +219,7 @@
 
     /* bg */
     .bg{
-        height: 200px;
-        background-size: contain;
-        background-position: center;
+        display: none;
     }
 /* bg */
 
@@ -243,9 +241,7 @@
     /* navbar */
     /* bg */
         .bg{
-            height: 200px;
-            background-size: contain;
-            background-position: center;
+            display: none;
         }
     /* bg */
 }
