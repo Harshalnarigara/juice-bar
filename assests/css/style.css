@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 :root {
     --headingcolor: rgb(237, 62, 62); 
 }
@@ -194,6 +194,15 @@
 
 /* get 10% */
 
+/* makes */
+
+    .makes h1{
+        font-weight: 500;
+        font-family: "Questrial", sans-serif;
+    }
+
+/* makes */
+
 
 @media (min-width:448px) and (max-width:576px) {
 
@@ -207,6 +216,14 @@
     }
 
     /* navbar */
+
+    /* bg */
+    .bg{
+        height: 200px;
+        background-size: contain;
+        background-position: center;
+    }
+/* bg */
 
 }
 
@@ -224,4 +241,11 @@
         justify-content: center;
     }
     /* navbar */
+    /* bg */
+        .bg{
+            height: 200px;
+            background-size: contain;
+            background-position: center;
+        }
+    /* bg */
 }
